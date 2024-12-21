@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import LandingPage from "../components/LandingPage"
 import {NavbarContextProvider} from "../store/NavbarContext"
-export const IndexRoute = () => (
+export const AboutRoute = () => (
   <NavbarContextProvider>
     <Layout>
       <LandingPage />
@@ -12,6 +12,6 @@ export const IndexRoute = () => (
   </NavbarContextProvider>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="About" />
 
-export default IndexRoute
+export default AboutRoute

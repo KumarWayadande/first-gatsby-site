@@ -2,16 +2,16 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import LandingPage from "../components/LandingPage"
 import {NavbarContextProvider} from "../store/NavbarContext"
-export const IndexRoute = () => (
+import ArticleContainer from "../components/ArticleContainer"
+export const ArticleRoute = () => (
   <NavbarContextProvider>
     <Layout>
-      <LandingPage />
+      <ArticleContainer />
     </Layout>
   </NavbarContextProvider>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => <Seo title="Articles" />
 
-export default IndexRoute
+export default ArticleRoute
