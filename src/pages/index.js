@@ -1,3 +1,7 @@
+// this component refers to the main index route component
+// t
+
+
 import * as React from "react"
 
 import Layout from "../components/layout"
