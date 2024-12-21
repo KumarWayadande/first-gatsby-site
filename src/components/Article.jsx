@@ -2,7 +2,7 @@ import React from 'react';
 
 
 // Article Component that creates a single article page
-// Article Component that creates a single article pa
+// Article Component that creates a single article pag
 const Article = () => {
   return (
     <div className="article-row flex flex-col md:flex-row">
