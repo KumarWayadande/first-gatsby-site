@@ -1,5 +1,5 @@
 // this component refers to the main index route component
-// this componen
+// this component r
 
 
 import * as React from "react"
