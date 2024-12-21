@@ -1,4 +1,4 @@
-// this component refers to the main index route componen
+// this component refers to the main index route compone
 // this component refers to the main index route component
 
 
