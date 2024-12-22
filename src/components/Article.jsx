@@ -1,7 +1,7 @@
 import React from "react"
 
 // Article Component that creates a single article page
-// Artic
+// Articl
 const Article = ({date, title, description}) => {
   return (
     <div className="article-row flex flex-col md:flex-row">
