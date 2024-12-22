@@ -2,7 +2,7 @@ import React from "react"
 
 // Article Component that creates a single article page
 // Article Component that creates a single article page
-// Article Component that creates a si
+// Article Component that creates a sin
 const Article = ({date, title, description}) => {
   return (
     <div className="article-row flex flex-col md:flex-row">
