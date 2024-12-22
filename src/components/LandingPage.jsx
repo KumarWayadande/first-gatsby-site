@@ -3,8 +3,30 @@ import React from "react"
 import MediaIcon from "./MediaIcon"
 import OverviewArticle from "./OverviewArticle"
 import { StaticImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
 
 const LandingPage = () => {
+  const data = useStaticQuery(graphql`
+    query MarkdownFiles {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date(formatString: "YYYY-MM-DD")
+              description
+              slug
+            }
+            excerpt
+          }
+        }
+      }
+    }
+  `)
+
+  // console.log(data)
+
   return (
     <div className="main-page-container">
       <div className="landing-page flex flex-col space-y-4 max-w-2xl">
@@ -83,9 +105,20 @@ const LandingPage = () => {
 
       <div className="third-section flex md:flex-row flex-col my-20">
         <div className="left flex flex-col w-[100%]">
+          {data.allMarkdownRemark.edges.map((value, index) => {
+            return (
+              <OverviewArticle
+                key={index}
+                date={value.node.frontmatter.date}
+                title={value.node.frontmatter.title}
+                description={value.node.frontmatter.description}
+              />
+            )
+          })}
+
+          {/* <OverviewArticle />
           <OverviewArticle />
-          <OverviewArticle />
-          <OverviewArticle />
+          <OverviewArticle /> */}
         </div>
 
         <div className="right flex flex-col w-[100%] my-5 lg:pl-32 px-4 py-0">

@@ -10,8 +10,8 @@
 module.exports = {
   siteMetadata: {
     title: `Kumar's Portfolio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `This website refers to all the articles, projects and all about Kumar Wayadande.`,
+    author: `Kumar Wayadande`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -24,7 +24,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `contents`,
+        path: `${__dirname}/src/contents`,
+      },
+    },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,

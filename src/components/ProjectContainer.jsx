@@ -1,5 +1,5 @@
 import React from 'react'
-import projectInfo from "../contents/project-information";
+import projectInfo from "../content_info/project-information";
 import Heading from "./Heading";
 import HeadingContainer from "./HeadingContainer";
 import Project from "./Project";
@@ -60,6 +60,7 @@ const ProjectContainer = () => {
             projectDescription={item.projectDescription}
             projectLink={item.projectLink}
             projectLogo={item.projectLogo}
+            projectIndex={index}
           />)
         })}
       </div>

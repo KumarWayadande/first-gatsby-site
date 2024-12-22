@@ -1,11 +1,6 @@
 import * as React from "react"
 import { useContext } from "react"
 import Seo from "./seo"
-import ArticleContainer from "./ArticleContainer"
-import LandingPage from "./LandingPage"
-import Uses from "./Uses"
-import Speaking from "./Speaking"
-import ProjectContainer from "./ProjectContainer"
 import NavbarItem from "./NavbarItem"
 import Navbar from "./Navbar"
 import NavbarItemContainer from "./NavbarItemContainer"
@@ -46,7 +41,7 @@ export default function Layout({ children }) {
 
           <div className="footer flex flex-col items-center md:flex-row justify-between py-10 px-5 my-5 border-t-2 border-gray-100 dark:border-t-[1px] dark:border-gray-800">
             <NavbarItemContainer extraClasses="my-3">
-              <NavbarItem url="/" heading="About" />
+              <NavbarItem url="/" heading="Home" />
               <NavbarItem url="/articles" heading="Articles" />
               <NavbarItem url="/projects" heading="Projects" />
               <NavbarItem url="/speaking" heading="Speaking" />

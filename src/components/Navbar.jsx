@@ -42,7 +42,7 @@ export default function Navbar() {
           </div>
           <NavItemContainer>
             <>
-              <NavItem isBottomBorder url="" heading="Home" />
+              <NavItem isBottomBorder url="/" heading="Home" />
               <NavItem isBottomBorder url="/articles" heading="Articles" />
               <NavItem isBottomBorder url="/projects" heading="Projects" />
               <NavItem isBottomBorder url="/speaking" heading="Speaking" />
